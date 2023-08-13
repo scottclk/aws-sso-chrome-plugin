@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AWS SSO Account Name",
+  "description": "Displays the full AWS Account name for SSO",
+  "author": "Ops",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.aws.amazon.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
